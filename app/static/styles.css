@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.welcome-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.welcome-message-left {
+    animation: slideInLeft 1.5s ease-out;
+    font-size: 2.5em;
+    margin-bottom: 0;
+    color: #333;
+    font-size: 2em;
+}
+
+.welcome-message-right {
+    animation: slideInRight 1.5s ease-out;
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #666;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    /* Increase the width of the boxes */
+    height: 350px;
+    /* Increase the height of the boxes */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.box img {
+    width: 320px;
+    /* Set a fixed width for images */
+    height: 280px;
+    /* Set a fixed height for images */
+    margin-bottom: 10px;
+    object-fit: cover;
+    /* Ensure the image fits within the specified dimensions */
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box img {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+}
+
+.box h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+    border: 2px solid #333;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.box h3 a {
+    color: grey;
+    text-decoration: none;
+}
+
+.box h3 a:hover {
+    color: #4CAF50;
+    /* Change color on hover */
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 40px;
+    margin-top: 50px;
+    /* Add margin to create space between footer and content */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    color: #4CAF50;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.contact span {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.socials a {
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.socials a:hover {
+    color: #4CAF50;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links ul li a:hover {
+    color: #4CAF50;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1px;
+    border-top: 1px solid #4CAF50;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+}

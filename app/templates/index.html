@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Argo Tech{% endblock %}
+
+{% block content %}
+<div class="welcome-container">
+    <h2 class="welcome-message-left">Welcome to Agro Tech</h2>
+    <h2 class="welcome-message-right">Your one-stop solution for agricultural technology</h2>
+</div>
+<div class="box-container">
+    <div class="box">
+        <img src="{{ url_for('static', filename='crop_icon.png') }}" alt="Crop Recommendation">
+        <h3><a href="{{ url_for('main.crop_recommendation') }}">Crop Recommendation</a></h3>
+    </div>
+    <div class="box">
+        <img src="{{ url_for('static', filename='pest_icon.png') }}" alt="Pest Detection">
+        <h3><a href="{{ url_for('main.pest_detection') }}">Pest Detection</a></h3>
+    </div>
+</div>
+{% include "footer.html" %}
+{% endblock %}

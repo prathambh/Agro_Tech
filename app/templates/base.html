@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Agro Tech{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Agro Tech</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('main.index') }}">Home</a></li>
+                <li><a href="{{ url_for('main.crop_recommendation') }}">Crop Recommendation</a></li>
+                <li><a href="{{ url_for('main.pest_detection') }}">Pest Detection</a></li>
+                <li><a href="{{ url_for('main.contact_us') }}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
